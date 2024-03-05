@@ -1,0 +1,10 @@
+<h1>Wild Search</h1>
+<form (ngSubmit)="search()">
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    name="searchTerm"
+    placeholder="Entrez le nom de l'étudiant"
+  />
+  <button type="submit">Rechercher</button>
+</form>
