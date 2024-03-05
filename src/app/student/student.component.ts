@@ -1,15 +1,15 @@
 import { Component, inject } from '@angular/core';
-import { ActivatedRoute, ParamMap, RouterLink } from '@angular/router';
+import { ActivatedRoute, ParamMap, RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-student',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, RouterOutlet],
   templateUrl: './student.component.html',
   styleUrl: './student.component.scss'
 })
 export class StudentComponent {
-  
+
   route: ActivatedRoute = inject(ActivatedRoute);
   studentName: string | null = null;
   ngOnInit() {
